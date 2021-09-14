@@ -10,8 +10,12 @@
 }
 
 body {
-  background-image: url('../img/tenda.jpg');
+  background: url('../img/tenda.jpg') no-repeat center fixed;
   background-size:cover;
+  -webkit-background-size: cover; /* responsividades para o safari */
+  -moz-background-size: cover; /* responsividades para o monzila */
+  -ms-background-size: cover; /* responsividades para o explorer */
+  -moz-background-size: cover; /* responsividades para o opera */
   /*background-position-y: -200px;*/
 }
 
