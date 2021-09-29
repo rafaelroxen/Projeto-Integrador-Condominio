@@ -1,18 +1,3 @@
-<?php
-
-$localhost = "localhost";
-$user = "root";
-$password = "";
-$banco = "condomobile";
-
-$conecta = mysqli_connect($localhost, $user, $password, $banco);
-
-$sql = mysqli_query($conecta, "SELECT * FROM userr");
-
-echo mysqli_num_rows($sql)
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -27,14 +12,14 @@ echo mysqli_num_rows($sql)
 <body>
   <div class="login-container">
     <h1>Login</h1>
-    <form method="POST">
+    <form method="POST" class="form-signin" action="logar.php">
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email" placeholder="Digite seu e-email" autocomplete="off">
       <label for="password">Senha</label>
       <input type="password" name="senha" id="password" placeholder="Digite sua senha">
       <div id="forgot-pass-cadastrar">
         <a href="#" id="forgot-pass">Esquerci minha senha!</a>
-        <a href="/cadastrar.html"">Cadastrar</a>
+        <a href="cadastrar.php"">Cadastrar</a>
       </div>
       <input type=" submit" value="Login">
     </form>
