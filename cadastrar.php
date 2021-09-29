@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Condo Mobile - Cadastro</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a href="/index.html" id="btn_login" type="submit">Logar</a>
   <div class="login-container">
     <h1>Cadastro</h1>
     <form method="POST">
